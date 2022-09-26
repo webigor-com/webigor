@@ -1,18 +1,18 @@
 import styled from '@emotion/styled';
 
 /* eslint-disable-next-line */
-export interface ButtonProps {}
+export interface ButtonProps {
+  onClick: () => void;
+}
 
-const StyledButton = styled.div`
-  color: pink;
+const StyledButton = styled.button`
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
 `;
 
 export function Button(props: ButtonProps) {
-  return (
-    <StyledButton>
-      <h1>Welcome to Button!</h1>
-    </StyledButton>
-  );
+  return <StyledButton {...props}>Button</StyledButton>;
 }
 
 export default Button;
