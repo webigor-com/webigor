@@ -7,6 +7,7 @@ export interface ButtonProps {
 
 const StyledButton = styled.button`
   font-size: 1.2rem;
+  background-color: tomato;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
 `;
